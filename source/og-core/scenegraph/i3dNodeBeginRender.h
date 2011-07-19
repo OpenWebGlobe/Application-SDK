@@ -1,0 +1,42 @@
+/*******************************************************************************
+Project       : i3D Studio  
+Purpose       : Begin Render Node
+Creation Date : 17.3.2011
+Author        : Martin Christen
+Copyright     : Copyright (c) 2007 by FHNW. All rights reserved.
+*******************************************************************************/
+
+
+#ifndef _I3D_NODEBEGINRENDER_H 
+#define _I3D_NODEBEGINRENDER_H
+
+#include "og.h"
+#include "scenegraph/Node.h"
+#include "math/vec3.h"
+
+//! \class i3dNodeCamera
+//! \brief Camera (setting projection matrix)
+//! \author Martin Christen, martin.christen@fhnw.ch
+//! \ingroup node
+class OPENGLOBE_API i3dNodeBeginRender : public Node
+{
+public:
+   i3dNodeBeginRender();
+   virtual ~i3dNodeBeginRender();
+
+   virtual void OnInit();
+   virtual void OnExit();
+
+   virtual bool IsGroup(){return false;}
+   virtual void OnRender(IRenderEngine* pEngine);
+
+   virtual void OnTraverse(TraversalState& oTrav);
+   virtual void OnChangeState(IRenderEngine* pEngine);
+
+protected:
+
+
+};
+
+
+#endif

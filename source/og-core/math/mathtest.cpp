@@ -1,0 +1,33 @@
+
+
+// Triangulation:
+#include "math/delaunay/Predicates.h"
+#include "math/delaunay/DelaunayVertex.h"
+#include "math/delaunay/DelaunayTriangulation.h"
+#include "math/delaunay/DelaunayTriangle.h"
+#include "math/delaunay/DelaunayMemoryManager.h"
+#include "math/delaunay/DelaunayLocationStructure.h"
+
+// 
+#include "math/aabb3.h"
+#include "math/angleaxis.h"
+#include "math/bestfit.h"
+#include "math/Billboard.h"
+#include "math/box.h"
+#include "math/CloudPoint.h"
+#include "math/ConvexHull.h"
+#include "math/ElevationPoint.h"
+#include "math/ElevationPointUtils.h"
+#include "math/GeoCoord.h"
+#include "math/line3.h"
+#include "math/PolygonMapper.h"
+#include "math/quaternion.h"
+#include "math/ray.h"
+#include "math/spa.h"
+#include "math/sphere3.h"
+#include "math/TriangleMapper.h"
+#include "math/vec2.h"
+#include "math/vec3.h"
+#include "math/vec4.h"
+#include "math/viewfrustum.h"
+#include "math/yawpitchroll.h"
